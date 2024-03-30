@@ -6,42 +6,41 @@ import org.springframework.stereotype.Component;
 @Component
 public class SearchCustomerResponse {
 
-	private String status;
-	private String message;
-	private long customerCode;
-	
-	@Autowired
-	private CustomerData customerData;
+  private String status;
+  private String message;
+  private long customerCode;
 
-	public String getStatus() {
-		return status;
-	}
+  @Autowired private CustomerData customerData;
 
-	public void setStatus(String status) {
-		this.status = status;
-	}
+  public String getStatus() {
+    return status;
+  }
 
-	public String getMessage() {
-		return message;
-	}
+  public void setStatus(String status) {
+    this.status = status;
+  }
 
-	public void setMessage(String message) {
-		this.message = message;
-	}
+  public String getMessage() {
+    return message;
+  }
 
-	public long getCustomerCode() {
-		return customerCode;
-	}
+  public void setMessage(String message) {
+    this.message = message;
+  }
 
-	public void setCustomerCode(long customerCode) {
-		this.customerCode = customerCode;
-	}
+  public long getCustomerCode() {
+    return customerCode;
+  }
 
-	public CustomerData getCustomerData() {
-		return customerData;
-	}
+  public void setCustomerCode(long customerCode) {
+    this.customerCode = customerCode;
+  }
 
-	public void setCustomerData(CustomerData customerData) {
-		this.customerData = customerData;
-	}
+  public CustomerData getCustomerData() {
+    return customerData;
+  }
+
+  public void setCustomerData(CustomerData customerData) {
+    this.customerData = customerData;
+  }
 }
